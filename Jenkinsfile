@@ -25,7 +25,7 @@ node{
    }
    stage('Nexus Image Push'){
    sh "docker login -u admin -p admin123 13.232.193.72:8083"
-   sh "docker tag saidamo/myweb:0.0.2 13.232.193.72:8083/damo:1.0.0"
+   sh "docker tag saidam/myweb:0.0.2 13.232.193.72:8083/dam:1.0.0"
    sh 'docker push 13.232.193.72:8083/damo:1.0.0'
    }
    stage('Remove Previous Container'){
